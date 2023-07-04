@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="stylesheets/styles.css" rel="stylesheet">
+<style>
+html { box-sizing: border-box;}
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+h1 {
+  margin: 0px;
+}
+.heading { 
+  padding: 20px;
+  border: 1px solid red;
+  margin: 10px;
+  background-color: lightblue;
+}
+#my-box-model {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: lightblue;  
+  width: 50%;
+  height: 300px;
+  
+  /* padding: 10px;
+  border: 1px solid red;
+  margin: 20px; */
+}
+/* margin-left: auto; */
+
+</style>
+</head>
+<body>
+  <nav class="text-white bg-dark">Navigation Bar Here</nav>
+  <h1><div class="heading">Box Model Example</div></h1>
+<button>press me</button>
+  <div id="my-box-model">
+    <b>In CSS you can use the following length units:</b> <br><br>
+    <b>Absolute units:</b><br>
+    • px - pixels - 1/96th of 1 inch. Equals 1 pixel dot displayed on low dpi devices.<br>
+    <b>Relative units:</b><br>
+    • % - percent relative to the parent size.<br>
+    • em - size in relation to the current element.<br>
+    • rem - size in relation to the root element (16px)<br>
+  </div>
+
+  <div style="background-color: red; width: 540px">540px wide</div>
+  <div style="background-color: green; width: 720px">720px wide</div>
+  <div style="background-color: blue; width: 960px">960px wide</div>
+  <div style="background-color: orange; width: 1140px">1140px wide</div>
+
+  <footer class="bg-light">Footer Here</footer>
+</body>
+</html>

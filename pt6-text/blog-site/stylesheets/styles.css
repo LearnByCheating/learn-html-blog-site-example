@@ -1,0 +1,147 @@
+/* -------------------- bootstrap class replacement styles ------------------ */
+/* -- COLOR -- */
+.text-white { color: white; }
+.text-muted { color: #6c757d; }
+.text-dark { color: #212529; }
+.bg-dark { background-color: #212529 !important; }
+.bg-light { background-color: #f8f9fa !important; }
+
+
+/* -- SPACING -- */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+body { margin: 0;}
+
+
+@media (min-width: 576px) {
+  .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .container { max-width: 960px; }
+  /* -- GRID -- */
+  .row { display: grid; }
+  .grid-67-33 { grid-template-columns: 2fr 1fr; }
+  .grid-75-25 { grid-template-columns: 3fr 1fr; }
+  .g-5 {grid-gap: 3rem; gap: 3rem; } 
+  .width-67 { width: 67%; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+.container {
+  width: 100%;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 
+auto - auto;
+1 - .25rem!important; 4px
+2 - .5rem!important; 8px
+3 - 1rem!important; 16px
+4 - 1.5rem!important; 24px
+5 - 3rem!important; 48px
+*/
+.mt-0 { margin-top: 0px!important }
+.mt-3 { margin-top: 1rem!important; }
+.mb-2 { margin-bottom: .5rem!important; }
+.mb-3 { margin-bottom: 1rem!important; }
+.mb-4 { margin-bottom: 1.5rem!important; }
+.ms-2 { margin-left: .5rem!important; }
+.me-2 { margin-right: .5rem!important; }
+.ms-auto { margin-left: auto !important; }
+.my-3 { margin-top: 1rem!important; margin-bottom: 1rem!important; }
+.px-0 { padding-left: 0px!important; padding-right: 0px!important; }
+.p-4 { padding: 1.5rem!important; }
+.py-4 { padding-top: 1.5rem!important; padding-bottom: 1.5rem!important; }
+.border { border: 1px solid #dee2e6!important; }
+.border-top { border-top: 1px solid #dee2e6!important; }
+.border-bottom { border-bottom: 1px solid #dee2e6!important; }
+.rounded { border-radius: .25rem!important;}
+
+
+/* -- TEXT -- */
+body {
+  /* font-size: 1rem;  /* 1rem default is 16px in all major browsers */  
+  /* font-weight: 400; /* Default: 400 or normal */
+  /* background-color: white; /* Default: white */  
+  color: #212529; /* Default: black */
+  line-height: 1.5; /* Default: ~1.2 times the element's font size depending on the font. Use 1.5 or more for accesibility reasons */
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; /* Default: Times or "Times New Roman"*/
+}
+.lh-1 { line-height: 1; }
+.lh-sm { line-height: 1.25; }
+.lh-base { line-height: 1.5; }
+.lh-lg { line-height: 2; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* 8px */
+  font-weight: 500; /* 400 is normal, 700 is bold */
+  line-height: 1.2;
+}
+h1 {font-size: calc(1.375rem + 1.5vw)} /* default: 2em; margin: .67em 0px; */
+h2 {font-size: calc(1.325rem + .9vw)} /* default: 2em; margin: .83em 0px; */
+h3 {font-size: calc(1.3rem + .6vw)} /* default: 1.17em; margin: 1em 0px; */
+h4 {font-size: calc(1.275rem + .3vw)} /* default: 1em; margin: 1.33em 0px; */
+h5 {font-size: 1.25rem; } /* default: .83em; margin: 1.67em 0px; */
+h6 {font-size: 1rem; } /* default: .67em; margin: 2.33em 0px; */
+
+/* vw is percent of viewport width */
+.fs-1 { font-size: calc(1.375rem + 1.5vw)!important; } /* 22px + 1.5% width */
+.fs-2 { font-size: calc(1.325rem + .9vw)!important; } /* 21.2px + .9% width */
+.fs-3 { font-size: calc(1.3rem + .6vw)!important; } /* 20.8px + .6% width */
+.fs-4 { font-size: calc(1.275rem + .3vw)!important; } /* 20.4px + .3% width */
+.fs-5 { font-size: 1.25rem!important; } /* 20px */
+.fs-6 { font-size: 1rem!important; } /* 16px */
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.text-center { text-align: center; } 
+.text-start { text-align: start; } /* Aligns text to the left */
+.text-end { text-align: end; } /* Aligns text to the right */
+.fw-bold { font-weight: bold; }
+.fst-italic { font-style: italic; }
+.text-decoration-underline { text-decoration: underline; }
+.text-decoration-none { text-decoration: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* alert(getComputedStyle(document.querySelector('html'))['font-size']) */
