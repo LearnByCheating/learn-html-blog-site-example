@@ -6,7 +6,6 @@
 .bg-dark { background-color: #212529 !important; }
 .bg-light { background-color: #f8f9fa !important; }
 
-
 /* -- GRID -- */
 .row { display: grid; }
 .grid-67-33 { grid-template-columns: 2fr 1fr; }
