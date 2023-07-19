@@ -10,20 +10,14 @@
   <title>ARTICLE TITLE HERE</title>
 
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-  <link href="../stylesheets/mimic-bootstrap.css" rel="stylesheet">
   <link href="../stylesheets/styles.css" rel="stylesheet"> 
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        Site Name
-      </a>
+  <nav class="text-white bg-dark mb-4">
+    <div class="container">Navigation Bar Here
       <ul class="navbar-nav">
-        <li>
-          <a class="nav-link" href="/">All Articles</a>
-        </li>
+        <li class="nav-item">SiteLink</li>
       </ul>
     </div>
   </nav>
@@ -31,24 +25,23 @@
   <article class="container">
     <header class="bg-light mb-4 p-4 p-md-5 border rounded">
       <h1>Article Title</h1>
-      <p class="text-muted">by AUTHOR NAME HERE | January 1, 202X</p>
+      <p>Author, date</p>
     </header>
 
     <div class="row g-5 grid-75-25">
       <main class="col-md-9">
         <h2 id="topic-1">Article Topic 1</h2>
-        <p>Lorem ipsum.</p>
+        <p>Put your topic summary here.</p>
         <h3 id="subtopic-1a">Subtopic 1A</h3>
-        <p>Lorem ipsum.</p>
-        <h3 id="sub-subtopic-1ai">Sub-subtopic 1A i</h3>
-        <p>Lorem ipsum.</p>
+        <p>Put your subtopic text here.</p>
+        <h3 id="subtopic-1b">Subtopic 1B</h3>
+        <p>Put your next subtopic text here.</p>
 
         <!-- START ELEMENT EXAMPLES -->
-        <hr class="my-5">
+        <hr>
 
-        <h2 id="examples">HTML Element Examples</h2>
-        <p>Below are examples of common items to use in your articles.</p>
-    
+        <h2 id="elems">HTML Element Examples</h2>
+        <p>Below are common HTML elements to use in articles.</p>
 
         <!-- List Example -->
         <h3 id="ex-list" class="mt-5">List Examples</h3>
@@ -113,7 +106,8 @@
           <caption>Optional Table Caption Here.</caption>
         </table>
 
-        <h3 id="ex-image" class="mt-5">Image Examples</h3>
+        <!-- Image Example -->
+        <h3 id="elems-image">Images</h3>
         <figure>
           <img class="ms-auto" src="../images/placeholder-x.png" alt="placeholder">
           <figcaption>Image Caption</figcaption>
@@ -121,32 +115,31 @@
         <!-- END ELEMENT EXAMPLES -->     
       </main>
 
-     <!-- START SIDEBAR MENU -->
-     <nav class="col-md-3">
-      <div class="sidebar">
-        <div class="bg-light p-4 mb-3 card">
-          <h5 class="pb-2 border-bottom text-muted">Table of Contents</h4>
-          <ul class="nav flex-column my-0">
-            <li class="l1"><a class="nav-link" href="#topic-1">Article Topic 1</a></li>
-            <li class="l2"><a class="nav-link" href="#subtopic-1a">Subtopic 1A</a></li>
-            <li class="l3"><a class="nav-link" href="#sub-subtopic-1ai">Sub-subtopic 1a i</a></li>
-            <li class="l1"><a class="nav-link" href="#examples">Examples</a></li>
-            <li class="l2"><a class="nav-link" href="#ex-list">List Examples</a></li>
-            <li class="l2"><a class="nav-link" href="#ex-table">Table Example</a></li>
-            <li class="l2"><a class="nav-link" href="#ex-image">Image Examples</a></li>
+      <!-- START SIDEBAR MENU -->
+      <nav class="col-md-3">
+        <div class="bg-light p-4 mb-3 border rounded">
+          <h5>Table of Contents (sidebar)</h4>
+          <ul>
+            <li>Link to heading id "topic-1"</li>
+            <li>Link to heading id "subtopic-1a"</li>
+            <li>Link to heading id "subtopic-1b"</li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!-- END SIDEBAR MENU -->
+      </nav>
+      <!-- END SIDEBAR MENU -->
     </div>
   </article>
 
-  <footer class="bg-light mt-5 pt-3 pb-5 border-top text-center">
-    <a href="#" class="me-4  text-decoration-none">Back to top</a> |
-    <a href="/" class="ms-4  text-decoration-none">Home Page</a>
+  <footer class="bg-light mt-3 py-4 border-top">
+    <div class="container">Footer Here
+      <ul class="navbar-nav">
+        <li class="nav-item">YourDomain.com © 202X</li>
+        <li class="nav-item">Github</li>
+        <li class="nav-item">Twitter</li>
+        <li class="nav-item">LinkedIn</li>
+        <li class="nav-item">Facebook</li>
+      </ul>
+    </div>
   </footer>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -78,7 +78,7 @@ auto - auto;
 body {
   /* font-size: 1rem;  /* 1rem default is 16px in all major browsers */  
   /* font-weight: 400; /* Default: 400 or normal */
-  /* background-color: white; /* Default: white */  
+  /* background-color: white; /* Default: white */
   color: #212529; /* Default: black */
   line-height: 1.5; /* Default: ~1.2 times the element's font size depending on the font. Use 1.5 or more for accesibility reasons */
   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; /* Default: Times or "Times New Roman"*/

@@ -1,7 +1,2 @@
-/* -------------------- bootstrap class replacement styles ------------------ */
-/* -- COLOR -- */
-.text-white { color: white; }
-.text-muted { color: #6c757d; }
-.text-dark { color: #212529; }
-.bg-dark { background-color: #212529 !important; }
-.bg-light { background-color: #f8f9fa !important; }
+/* ------------------ Put custom style rules in this file ---------------- */
+

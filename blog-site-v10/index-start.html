@@ -13,13 +13,13 @@
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
   <link href="/stylesheets/mimic-bootstrap.css" rel="stylesheet">
   <link href="/stylesheets/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
     <div class="container container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="/images/site_icon.png" alt="Site logo" width="25" height="25" class="align-text-top me-2">
+        <img src="images/site_icon.png" alt="Site Logo" width="25" height="25" class="align-text-top me-2">
         Site Name
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,8 +28,13 @@
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li>
-            <!-- Remove the below link in production -->
             <a class="nav-link" href="/sample-form.html">Sample Form</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Link3</a>
           </li>
         </ul>
       </div>
@@ -37,34 +42,38 @@
   </nav>
   
   <main class="container">
-    <article class="text-white bg-dark rounded row flex-md-row mb-5 g-0 grid-67-33">
+    <!-- If using Bootstrap CDN these classes are ignored: grid-67-33 -->
+    <!-- If using the mimic-bootstrap stylesheet these classes are ignored: col, col-auto -->
+    <article class="text-white bg-dark rounded mb-5 row g-0 grid-67-33">
       <div class="col-md-8 p-4 p-lg-5">
         <h1 class="mt-0 fst-italic">Highlighted Article title 1</h1>
         <small class="text-muted">by AUTHOR NAME HERE | January 1, 202X</small>
         <p class="mt-2">Brief summary of this article. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, omnis non eum accusantium hic necessitatibus provident nostrum veritatis quam?</p> 
         <a href="/articles/article-template.html" class="text-white fw-bold">Continue reading</a>
       </div>
-      <div class="col-md-4 d-none d-md-block p-4 p-lg-5">
+      <div class="col-md-4 p-4 p-lg-5 d-none d-md-block">
         <img src="/images/placeholder-x.jpg" alt="Image Text" class="rounded w-100 h-auto">
       </div>
     </article>
 
+    
     <div class="row g-5 grid-67-33">
       <div class="col-md-8">
-
-        <article class="row g-0 card flex-md-row mb-3 grid-67-33-lg">
+        <!-- If using Bootstrap CDN these classes are ignored: row, grid-67-33 -->
+        <!-- If using the mimic-bootstrap stylesheet these classes are ignored: flex-md-row, col, col-auto -->
+        <article class="card mb-3 row flex-md-row grid-67-33-lg g-0">
           <div class="col p-3">
             <h3 class="mb-1">Highlighted Article 2</h3>
             <small class="text-muted">by AUTHOR NAME HERE | January 1, 202X</small>
             <p class="mt-2">Brief summary of this article. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, omnis non eum accusantium hic necessitatibus provident nostrum veritatis quam?</p> 
             <a href="/articles/article-template.html" class="stretched-link">Continue reading</a>
           </div>
-          <div class="col-auto d-none d-lg-block p-3">
+          <div class="col-auto p-3 d-none d-lg-block">
             <img src="/images/placeholder-x.jpg" alt="Image Text" width="200" height="200" class="rounded">
           </div>
         </article>
 
-        <article class="row g-0 card flex-md-row mb-3 grid-67-33-lg">
+        <article class="card mb-3 row flex-md-row grid-67-33-lg g-0">
           <div class="col p-3">
             <h3 class="mb-1">Highlighted Article 3</h3>
             <small class="text-muted">by AUTHOR NAME HERE | January 1, 202X</small>
