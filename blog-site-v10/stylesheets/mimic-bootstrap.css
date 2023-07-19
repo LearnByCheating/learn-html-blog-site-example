@@ -5,6 +5,18 @@
 .bg-dark { background-color: #212529 !important; }
 .bg-light { background-color: #f8f9fa !important; }
 
+.white { color: #fff;}
+.gray-100 { color: #f8f9fa;}
+.gray-200 { color: #e9ecef;}
+.gray-300 { color: #dee2e6;}
+.gray-400 { color: #ced4da;}
+.gray-500 { color: #adb5bd;}
+.gray-600 { color: #6c757d;}
+.gray-700 { color: #495057;}
+.gray-800 { color: #343a40;}
+.gray-900 { color: #212529;}
+.black { color:    #000;}
+
 /* -- DISPLAY UTILITIES -- */
 .d-none { display: none; }
 .d-block { display: block; }
@@ -437,7 +449,12 @@ figure { margin: 0 0 1rem; }
 
 /* -- FORMS -- */
 
-input, textarea, select { margin: 0; }
+input, textarea, select { 
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 label { display: inline-block; }
 .form-label { 
   margin-bottom: 0.5rem; 
@@ -459,12 +476,6 @@ label { display: inline-block; }
   color: #6c757d;
 }
 
-/* .form-check {
-  display: block;
-  margin-bottom: .125rem;
-  min-height: 1.5rem;
-  padding-left: 1.5em;
-} */
 .form-check-input {
   vertical-align: top;
   margin-top: 0.4em;
@@ -482,7 +493,7 @@ label { display: inline-block; }
 
 
 /* -- BUTTONS -- */
-button, input, select, textarea {
+button {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -550,15 +561,3 @@ button, select {
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
-
-.white { color: #fff;}
-.gray-100 { color: #f8f9fa;}
-.gray-200 { color: #e9ecef;}
-.gray-300 { color: #dee2e6;}
-.gray-400 { color: #ced4da;}
-.gray-500 { color: #adb5bd;}
-.gray-600 { color: #6c757d;}
-.gray-700 { color: #495057;}
-.gray-800 { color: #343a40;}
-.gray-900 { color: #212529;}
-.black { color:    #000;}
